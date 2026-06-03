@@ -1,11 +1,161 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Nordikhat | Software que impulsa el crecimiento de tu empresa">
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
+        <div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+            <div class="md:col-span-6 space-y-lg animate-in slide-in-from-left duration-700">
+                <h1 class="font-headline-xl text-headline-xl text-on-surface leading-tight">
+                    Software que impulsa el <span class="text-primary">crecimiento</span> de tu empresa
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-[600px]">
+                    Desarrollamos soluciones tecnológicas para optimizar procesos, aumentar la productividad y mejorar la gestión operativa de las organizaciones.
+                </p>
+                <div class="flex flex-wrap gap-md pt-md">
+
+                    <a href="/soluciones" class="inline-block bg-surface-container-lowest border border-outline-variant text-on-surface font-label-md text-label-md px-xl py-md rounded-xl hover:bg-surface-container-low transition-all text-center">
+                        Ver Soluciones
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-6 relative">
+                <div class="relative z-10 p-sm bg-white rounded-xl shadow-2xl border border-outline-variant animate-in zoom-in duration-1000">
+                    <img alt="Nordikhat Dashboard" class="w-full rounded-lg" data-alt="A clean and professional software dashboard interface displayed on a high-resolution screen with vibrant data visualizations. The interface features minimalist charts, a light-mode color scheme with corporate blue accents, and elegant typography. Soft ambient studio lighting reflects off the glass of the monitor, creating a high-end corporate software vibe. The composition is focused and modern, highlighting technical efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3J5ovaBv3NhEjx4KHxOKyqopyYuvUODKxKQscuSWZfEEN4vSDz5_DPvC-Vq5c8VtN5neC0XevLu_socznTHyf8ZVrvoUXDbUfFLbbmTg7xFZhhZY3FR4jEi9_PYpRGysPP4rvL0MxBeq2fSQ3trFLbQvRVbDQ9xzj3rC4_9kxTQ14Xk3k98l8tiFPA_p30u9Y9LufzK2zxqgJtU-7q5HjgCJf77n_K8ulQ73voKyG2yQd36RMu6zwNmN3_8QZBbW_yt91wQBENbI"/>
+                </div>
+                <!-- Decorative elements -->
+                <div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+                <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-2xl -z-10"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section -->
+    <section class="py-16 bg-surface-container-high border-y border-outline-variant">
+        <div class="max-w-max-width mx-auto px-margin-desktop text-center">
+            <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-lg font-bold opacity-80">Empresas que confían en nosotros</p>
+            <div class="flex flex-wrap justify-center items-center gap-xl md:gap-32">
+                <img src="/Logo-ServicesQPS.png" alt="Services QPS" class="h-16 md:h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all hover:scale-105 duration-300 cursor-pointer" />
+                <img src="/Logo-Daycare.png" alt="Daycare" class="h-16 md:h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-all hover:scale-105 duration-300 cursor-pointer" />
+            </div>
+        </div>
+    </section>
+    <!-- Solutions Summary (Bento Grid Style) -->
+    <section class="py-24 bg-surface-container-lowest">
+        <div class="max-w-max-width mx-auto px-margin-desktop">
+            <div class="mb-16">
+                <span class="text-primary font-label-sm text-label-sm uppercase tracking-widest">Nuestras Soluciones</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mt-sm">Soluciones diseñadas para cada desafío</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-gutter">
+                <!-- POS -->
+                <div class="md:col-span-3 lg:col-span-4 p-xl bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block" style="font-variation-settings: 'FILL' 1;">point_of_sale</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Sistema POS</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Gestión de ventas, inventarios y emisión de facturación electrónica.</p>
+                </div>
+                <!-- Daycare -->
+                <div class="md:col-span-3 lg:col-span-4 p-xl bg-white rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block">child_care</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Sistema para Daycares</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Herramientas para administración de guarderías y comunicación con los padres.</p>
+                </div>
+                <!-- Residencial -->
+                <div class="md:col-span-6 lg:col-span-4 p-xl bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block">apartment</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Sistema Residencial</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Control de accesos de conjuntos, reservas de zonas comunes y gestión de pagos.</p>
+                </div>
+                <!-- Limpieza -->
+                <div class="md:col-span-3 lg:col-span-6 p-xl bg-white rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block" style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Administración de Limpieza</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Programación de turnos, gestión de personal y seguimiento de tareas en tiempo real.</p>
+                </div>
+                <!-- Educativo -->
+                <div class="md:col-span-3 lg:col-span-6 p-xl bg-surface-container-low rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block">school</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Instituciones Educativas</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Administración académica, calificaciones y portal para estudiantes y profesores.</p>
+                </div>
+                <!-- Chatbots -->
+                <div class="md:col-span-2 lg:col-span-4 p-xl bg-white rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+                    <span class="material-symbols-outlined text-primary mb-md scale-125 block">smart_toy</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Chatbots</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Atención al cliente y soporte 24/7 mediante asistentes virtuales inteligentes.</p>
+                </div>
+                <!-- Web y Mobile -->
+                <div class="md:col-span-4 lg:col-span-8 p-xl bg-primary text-on-primary rounded-xl border border-primary hover:shadow-lg transition-all group">
+                    <span class="material-symbols-outlined mb-md scale-125 block" style="font-variation-settings: 'FILL' 1;">devices</span>
+                    <h3 class="font-headline-md text-headline-md mb-sm">Páginas Web y Apps Móviles</h3>
+                    <p class="font-body-sm text-body-sm opacity-90">Experiencias digitales robustas, escalables y optimizadas para iOS, Android y la Web. Diseño a medida para tu marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-max-width mx-auto px-margin-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-xl">Beneficios que transforman tu operación</h2>
+                    <div class="space-y-lg">
+                        <div class="flex gap-md">
+                            <div class="flex-shrink-0 w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">speed</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-md text-label-md font-bold mb-xs">Optimización de procesos</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Reducimos cuellos de botella y automatizamos tareas críticas para tu negocio.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-md">
+                            <div class="flex-shrink-0 w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">trending_up</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-md text-label-md font-bold mb-xs">Mayor productividad</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Tu equipo se enfoca en lo que realmente importa, nosotros nos encargamos del software.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-md">
+                            <div class="flex-shrink-0 w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">hub</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-md text-label-md font-bold mb-xs">Centralización de información</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Toda tu data en un solo lugar, segura y accesible para la toma de decisiones.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-md">
+                            <div class="flex-shrink-0 w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">auto_graph</span>
+                            </div>
+                            <div>
+                                <h4 class="font-label-md text-label-md font-bold mb-xs">Escalabilidad</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Soluciones que crecen al mismo ritmo que tus ambiciones empresariales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-[500px] bg-surface-dim rounded-2xl overflow-hidden group">
+                    <img alt="Team collaborating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A diverse team of software engineers and corporate stakeholders collaborating in a bright, modern office with glass walls and minimalist furniture. The atmosphere is energetic and professional, with natural light streaming through large windows. People are gathered around a sleek meeting table with laptops, discussing architectural diagrams shown on a wall-mounted screen. The visual style is clean, high-contrast, and embodies the 'Stripe' aesthetic of corporate excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPONHHN9pgn6e-TUpAe6cY7D1T3OVwFaG1bf1btoLINwqqdsnfnkG8J2ABxlnSpr-bJGSUCcnjO9qrRI4pT4INd8xlmI2d7UiwiBfwIovFp3XLb9HRGiQJOW0vsT0Y_FVBdIAJ01p3FyENWkS6VA-ZQHEP8__lyJZ491FweO0HAtr-tFnJozSdRtDJJZpYrhC30jE35kJN8xkze-njOA1NRsV_SmUk4_8yY5eFKwT2-d2MeE5WuFKw0u-koFJEmdkn8LlCnmgYr4M"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-max-width mx-auto px-margin-desktop text-center relative z-10">
+            <h2 class="font-headline-xl text-headline-xl text-on-surface mb-lg">¿Listo para transformar tu empresa?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-2xl mx-auto">
+                Únete a las organizaciones que ya están escalando sus operaciones con la tecnología de Nordikhat.
+            </p>
+            <a href="/contacto" class="inline-block bg-primary text-on-primary font-label-md text-label-md px-xl py-lg rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                Solicitar Información
+            </a>
+        </div>
+    </section>
 </Layout>

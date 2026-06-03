@@ -1,0 +1,46 @@
+---
+const pathname = Astro.url.pathname;
+const isActive = (path) => {
+  if (path === '/') return pathname === '/';
+  return pathname.startsWith(path);
+};
+---
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-sm h-16 transition-all duration-300" id="global-nav">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-max-width mx-auto">
+<div class="flex items-center gap-xl">
+<a href="/" class="flex items-center gap-sm">
+    <img src="/Logo-Transparent-NordikHat.png" alt="Nordikhat Logo" class="h-8 w-auto object-contain" />
+    <span class="font-headline-md text-headline-md font-bold text-primary">Nordikhat</span>
+</a>
+<div class="hidden md:flex gap-lg items-center">
+<a class={`font-label-md text-label-md transition-colors ${isActive('/') ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'}`} href="/">Inicio</a>
+<a class={`font-label-md text-label-md transition-colors ${isActive('/conocenos') ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'}`} href="/conocenos">Conócenos</a>
+<a class={`font-label-md text-label-md transition-colors ${isActive('/soluciones') ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'}`} href="/soluciones">Soluciones</a>
+<a class={`font-label-md text-label-md transition-colors ${isActive('/politicas') ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'}`} href="/politicas">Políticas</a>
+<a class={`font-label-md text-label-md transition-colors ${isActive('/contacto') ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-primary'}`} href="/contacto">Contacto</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+
+<script>
+    // Micro-interaction: Header scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('global-nav');
+        if (nav) {
+            if (window.scrollY > 20) {
+                nav.classList.add('py-2', 'shadow-lg');
+                nav.classList.remove('h-16');
+            } else {
+                nav.classList.remove('py-2', 'shadow-lg');
+                nav.classList.add('h-16');
+            }
+        }
+    });
+</script>

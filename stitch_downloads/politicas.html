@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Políticas | DevCorp</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .policy-section:target {
+            scroll-margin-top: 100px;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#444749",
+                    "secondary-container": "#dee0e2",
+                    "surface-container": "#e7eefe",
+                    "on-tertiary-fixed": "#141b2b",
+                    "secondary": "#5c5f60",
+                    "primary-fixed": "#dbe1ff",
+                    "primary": "#004ac6",
+                    "outline-variant": "#c3c6d7",
+                    "on-surface": "#151c27",
+                    "secondary-fixed": "#e1e2e4",
+                    "surface-bright": "#f9f9ff",
+                    "on-background": "#151c27",
+                    "on-surface-variant": "#434655",
+                    "surface-container-highest": "#dce2f3",
+                    "primary-container": "#2563eb",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-dim": "#d3daea",
+                    "on-secondary-container": "#606365",
+                    "surface-container-high": "#e2e8f8",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#ecf0ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c5c7c8",
+                    "tertiary": "#4e5566",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#404758",
+                    "surface-variant": "#dce2f3",
+                    "outline": "#737686",
+                    "on-primary-fixed": "#00174b",
+                    "background": "#f9f9ff",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "inverse-surface": "#2a313d",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#666d7f",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f0f3ff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary-fixed": "#191c1e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#dce2f7",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "tertiary-fixed-dim": "#c0c6db",
+                    "surface": "#f9f9ff",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "0.5rem",
+                    "margin-mobile": "16px",
+                    "lg": "1.5rem",
+                    "max-width": "1280px",
+                    "xl": "2rem",
+                    "xs": "0.25rem",
+                    "md": "1rem",
+                    "unit": "4px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-sm">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">DevCorp</div>
+<nav class="hidden md:flex items-center gap-xl">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Conócenos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Soluciones</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary" href="#">Políticas</a>
+</nav>
+<button class="bg-primary text-on-primary px-lg py-sm rounded-lg font-label-md hover:opacity-80 transition-opacity">
+                Solicitar Demo
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Sidebar Navigation (Anchor Links) -->
+<aside class="hidden lg:block lg:col-span-3">
+<div class="sticky top-24 space-y-md">
+<h3 class="font-label-sm text-label-sm uppercase text-outline tracking-widest mb-md">Contenido</h3>
+<nav class="flex flex-col gap-sm border-l border-outline-variant">
+<a class="pl-md py-xs font-label-md text-label-md text-on-surface-variant border-l-2 border-transparent hover:text-primary transition-all" href="#privacidad">Política de Privacidad</a>
+<a class="pl-md py-xs font-label-md text-label-md text-on-surface-variant border-l-2 border-transparent hover:text-primary transition-all" href="#datos">Tratamiento de Datos</a>
+<a class="pl-md py-xs font-label-md text-label-md text-on-surface-variant border-l-2 border-transparent hover:text-primary transition-all" href="#terminos">Términos y Condiciones</a>
+<a class="pl-md py-xs font-label-md text-label-md text-on-surface-variant border-l-2 border-transparent hover:text-primary transition-all" href="#cookies">Política de Cookies</a>
+</nav>
+</div>
+</aside>
+<!-- Content Area -->
+<div class="lg:col-span-9 max-w-3xl">
+<header class="mb-xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-sm">Avisos Legales y Políticas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Última actualización: 12 de Mayo, 2024. Entienda cómo manejamos su información y los términos de uso de nuestras soluciones de software.</p>
+</header>
+<div class="space-y-xl">
+<!-- Política de Privacidad -->
+<section class="policy-section bg-surface-container-lowest p-xl rounded-xl border border-outline-variant" id="privacidad">
+<div class="flex items-center gap-md mb-lg">
+<span class="material-symbols-outlined text-primary text-3xl">security</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Política de Privacidad</h2>
+</div>
+<div class="space-y-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>En <strong>DevCorp</strong>, la privacidad de nuestros usuarios es una prioridad fundamental. Esta política detalla la información que recolectamos, cómo la utilizamos y las medidas que tomamos para protegerla.</p>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-lg">1. Recolección de Información</h3>
+<p>Recopilamos información personal necesaria para la prestación de nuestros servicios de desarrollo de software, incluyendo nombre, correo electrónico y detalles de la empresa.</p>
+<ul class="list-disc pl-lg space-y-xs">
+<li>Datos de contacto profesional.</li>
+<li>Información de uso de la plataforma.</li>
+<li>Registros técnicos y logs de acceso.</li>
+</ul>
+</div>
+</section>
+<!-- Tratamiento de Datos -->
+<section class="policy-section bg-surface-container-lowest p-xl rounded-xl border border-outline-variant" id="datos">
+<div class="flex items-center gap-md mb-lg">
+<span class="material-symbols-outlined text-primary text-3xl">database</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Tratamiento de Datos</h2>
+</div>
+<div class="space-y-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>El tratamiento de datos personales en DevCorp se rige por los principios de legalidad, finalidad, libertad, veracidad, transparencia y seguridad.</p>
+<div class="bg-surface-container-low p-lg rounded-lg border border-outline-variant">
+<p class="font-label-md text-label-md text-on-primary-fixed-variant">Usted tiene derecho a conocer, actualizar y rectificar sus datos personales en cualquier momento a través de nuestro portal de soporte o enviando un correo a privacidad@devcorp.com.</p>
+</div>
+</div>
+</section>
+<!-- Términos y Condiciones -->
+<section class="policy-section bg-surface-container-lowest p-xl rounded-xl border border-outline-variant" id="terminos">
+<div class="flex items-center gap-md mb-lg">
+<span class="material-symbols-outlined text-primary text-3xl">gavel</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Términos y Condiciones</h2>
+</div>
+<div class="space-y-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>Al acceder a los servicios de DevCorp, el usuario acepta cumplir con los siguientes términos operativos:</p>
+<div class="grid md:grid-cols-2 gap-md">
+<div class="p-md bg-surface-variant rounded-lg">
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-xs">Uso Permitido</h4>
+<p class="text-body-sm">Uso exclusivamente profesional de las herramientas licenciadas.</p>
+</div>
+<div class="p-md bg-surface-variant rounded-lg">
+<h4 class="font-label-md text-label-md text-on-surface font-bold mb-xs">Propiedad Intelectual</h4>
+<p class="text-body-sm">Todo el código base y algoritmos son propiedad de DevCorp.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Cookies -->
+<section class="policy-section bg-surface-container-lowest p-xl rounded-xl border border-outline-variant" id="cookies">
+<div class="flex items-center gap-md mb-lg">
+<span class="material-symbols-outlined text-primary text-3xl">cookie</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Política de Cookies</h2>
+</div>
+<div class="space-y-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>Utilizamos cookies técnicas y analíticas para mejorar la experiencia de navegación en nuestro sitio web corporativo.</p>
+<table class="w-full border-collapse font-body-sm">
+<thead>
+<tr class="bg-surface-container-high text-left">
+<th class="p-sm border border-outline-variant">Tipo</th>
+<th class="p-sm border border-outline-variant">Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-sm border border-outline-variant">Esenciales</td>
+<td class="p-sm border border-outline-variant">Mantenimiento de sesión y seguridad.</td>
+</tr>
+<tr>
+<td class="p-sm border border-outline-variant">Analíticas</td>
+<td class="p-sm border border-outline-variant">Métricas anónimas de tráfico web.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl bg-surface-container-low border-t border-outline-variant mt-32">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="space-y-md">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">DevCorp</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Soluciones de software de alto nivel para empresas que buscan excelencia técnica.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-md">Empresa</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Conócenos</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Soluciones</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-md">Legal</h4>
+<ul class="space-y-sm">
+<li><a class="font-body-sm text-body-sm text-primary underline" href="#">Políticas</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-primary mb-md">Boletín</h4>
+<div class="flex gap-xs">
+<input class="bg-surface-container-lowest border border-outline-variant rounded-lg p-sm text-body-sm w-full focus:ring-2 focus:ring-primary outline-none" placeholder="Tu correo" type="email"/>
+<button class="bg-primary text-on-primary p-sm rounded-lg">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop mt-xl pt-lg border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 DevCorp Software Solutions. Todos los derechos reservados.</p>
+<div class="flex gap-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</footer>
+<script>
+        // Highlighting active section in sidebar on scroll
+        const sections = document.querySelectorAll('.policy-section');
+        const navLinks = document.querySelectorAll('aside nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-primary', 'font-bold');
+                link.classList.add('text-on-surface-variant', 'border-transparent');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'border-primary', 'font-bold');
+                    link.classList.remove('text-on-surface-variant', 'border-transparent');
+                }
+            });
+        });
+    </script>
+</body></html>

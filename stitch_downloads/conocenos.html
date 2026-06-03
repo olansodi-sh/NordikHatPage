@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros | DevCorp Software Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#444749",
+                    "secondary-container": "#dee0e2",
+                    "surface-container": "#e7eefe",
+                    "on-tertiary-fixed": "#141b2b",
+                    "secondary": "#5c5f60",
+                    "primary-fixed": "#dbe1ff",
+                    "primary": "#004ac6",
+                    "outline-variant": "#c3c6d7",
+                    "on-surface": "#151c27",
+                    "secondary-fixed": "#e1e2e4",
+                    "surface-bright": "#f9f9ff",
+                    "on-background": "#151c27",
+                    "on-surface-variant": "#434655",
+                    "surface-container-highest": "#dce2f3",
+                    "primary-container": "#2563eb",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-dim": "#d3daea",
+                    "on-secondary-container": "#606365",
+                    "surface-container-high": "#e2e8f8",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#ecf0ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c5c7c8",
+                    "tertiary": "#4e5566",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#404758",
+                    "surface-variant": "#dce2f3",
+                    "outline": "#737686",
+                    "on-primary-fixed": "#00174b",
+                    "background": "#f9f9ff",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "inverse-surface": "#2a313d",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#666d7f",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f0f3ff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary-fixed": "#191c1e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#dce2f7",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "tertiary-fixed-dim": "#c0c6db",
+                    "surface": "#f9f9ff",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "0.5rem",
+                    "margin-mobile": "16px",
+                    "lg": "1.5rem",
+                    "max-width": "1280px",
+                    "xl": "2rem",
+                    "xs": "0.25rem",
+                    "md": "1rem",
+                    "unit": "4px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-sm h-16">
+<nav class="flex justify-between items-center h-full px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">DevCorp</div>
+<div class="hidden md:flex items-center gap-xl h-full">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary h-full flex items-center" href="#">Conócenos</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Soluciones</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Políticas</a>
+</div>
+<button class="bg-primary text-on-primary px-lg py-sm rounded font-label-md text-label-md hover:opacity-80 transition-opacity">
+                Solicitar Demo
+            </button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- Hero / History Section -->
+<section class="py-xl md:py-[80px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div class="fade-in-up">
+<span class="text-primary font-label-sm uppercase tracking-wider mb-sm block">Nuestra Trayectoria</span>
+<h1 class="font-headline-xl text-headline-xl mb-lg text-on-surface">Forjando el futuro digital desde la excelencia técnica.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl">
+                        Fundada en un garaje tecnológico con la visión de democratizar el software de alto nivel, DevCorp ha evolucionado hasta convertirse en un referente de innovación corporativa. Nuestra historia no se escribe con líneas de código, sino con los éxitos de los clientes que han confiado en nuestra capacidad para resolver problemas complejos con elegancia y precisión.
+                    </p>
+<div class="flex gap-lg border-l-2 border-primary-container pl-lg">
+<div>
+<div class="font-headline-md text-headline-md text-primary">+10</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Años de Exp.</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary">250+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Proyectos</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary">50+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Especialistas</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-lg h-[400px] md:h-[500px] fade-in-up" style="animation-delay: 0.2s">
+<img alt="Oficina DevCorp" class="w-full h-full object-cover" data-alt="A bright, modern corporate office space in Madrid with clean lines and high ceilings. Large floor-to-ceiling windows allow soft, natural daylight to illuminate a minimalist meeting area featuring premium white furniture and subtle blue accents. The atmosphere is professional, serene, and technologically advanced, reflecting a high-tier software development company's focus on clarity and reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxc2zzX5qqIsZLKH4X4i0QlGfasel4UYREVqAz7nB1tPPpZIfgt8YiweCR6Oq2qxqfNr5-EuOIua-Q-T1O-tgGnOSm8mHd-7xYMvLRoCJY4BY4b-zblDGcF5Pr23qBug8-tVT7VNChJrL6S_3HVlLMxhnWS_YDsaXoZc1-MrTgG8XXFntO3KbmdT1ad7lKPw78y6Ds3BObuCP3Qd2odx4zDMEJhxBP4IJaDTIGF7yW2W4LQvms034JL6quEug6DJqicf99RuDoATo"/>
+</div>
+</div>
+</section>
+<!-- Mission, Vision, Values (Asymmetric Cards) -->
+<section class="bg-surface-container-low py-xl md:py-[80px]">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Propósito y Fundamentos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mt-sm">Nuestros pilares estratégicos definen cada decisión que tomamos y cada solución que entregamos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Mission -->
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="bg-primary-fixed text-on-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-md">Misión</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Empoderar a las organizaciones globales mediante arquitecturas de software escalables, seguras y centradas en el usuario, transformando desafíos operativos en ventajas competitivas.</p>
+</div>
+<!-- Vision -->
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="bg-primary-fixed text-on-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-md">Visión</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Liderar la transición hacia una economía digital más eficiente, siendo reconocidos mundialmente por nuestra integridad técnica y nuestra pasión por la excelencia.</p>
+</div>
+<!-- Values -->
+<div class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group">
+<div class="bg-primary-fixed text-on-primary-fixed w-12 h-12 rounded-lg flex items-center justify-center mb-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-md">Valores</h3>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-xs">
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Transparencia Radical</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Rigor Tecnológico</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Empatía con el Cliente</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Mejora Continua</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology (Agile Step-by-Step) -->
+<section class="py-xl md:py-[100px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col md:flex-row gap-xl">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-headline-lg text-on-surface sticky top-24">Nuestra Metodología de Alto Rendimiento</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-lg">Basamos nuestro flujo de trabajo en una adaptación rigurosa de Agile, garantizando entregas incrementales de valor y visibilidad total en cada sprint.</p>
+</div>
+<div class="md:w-2/3 space-y-xl">
+<!-- Step 1 -->
+<div class="flex gap-lg">
+<div class="flex-shrink-0 w-12 h-12 border-2 border-primary-container rounded-full flex items-center justify-center font-bold text-primary font-headline-md">01</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-xs">Análisis &amp; Arquitectura</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Desglosamos requerimientos complejos en soluciones técnicas viables antes de escribir la primera línea de código.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-lg">
+<div class="flex-shrink-0 w-12 h-12 border-2 border-primary-container rounded-full flex items-center justify-center font-bold text-primary font-headline-md">02</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-xs">Desarrollo Iterativo</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Sprints de 2 semanas con revisiones constantes para asegurar que el producto evoluciona según las necesidades del mercado.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-lg">
+<div class="flex-shrink-0 w-12 h-12 border-2 border-primary-container rounded-full flex items-center justify-center font-bold text-primary font-headline-md">03</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-xs">QA &amp; Seguridad Automatizada</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Implementamos CI/CD con pruebas de estrés y auditorías de seguridad en cada commit para una resiliencia total.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-lg">
+<div class="flex-shrink-0 w-12 h-12 border-2 border-primary-container rounded-full flex items-center justify-center font-bold text-primary font-headline-md">04</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-xs">Despliegue &amp; Optimización</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Lanzamiento controlado y monitorización proactiva para escalar la infraestructura según la demanda real del usuario.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section (Professional Grid) -->
+<section class="bg-surface-container-lowest py-xl md:py-[80px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto border-t border-outline-variant">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Liderazgo y Talento</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Un equipo multidisciplinar unido por la pasión tecnológica.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Member 1 -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-md border border-outline-variant relative">
+<img alt="CEO" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a middle-aged male executive in a sharp navy suit. He is standing in a brightly lit, modern architectural setting with glass walls and soft focus greenery in the background. The lighting is crisp and clean, following a high-key corporate aesthetic with a professional and approachable mood. The color palette consists of neutral whites, light blues, and deep navy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcpPpmu2DYoq0JPy_h69UP5yJaxc1dDhRC656imSUD5lmXx4X96iWBhN0f3ycDyKk6lLznr_dVm7d1kLQe7oxYlM3t_si1lnedVwMFtpFvxvQcf7oAd3_acmZQjZ8MFqzpOQzNxaEpMkv2mBm34EqCuqeUp9G1z_7G1QG8LpR9vg_vONiOp16EuPMl7g5zDp5MB0RNkFnSb_JF9T8JLo3ujiZ1dIFEc3-3ghQX2WBuUIZCU_L1EmWKlY_qxz0gVbk0jI4W-spk6TM"/>
+<div class="absolute bottom-4 left-4 flex gap-xs opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary text-on-primary p-xs rounded-lg"><span class="material-symbols-outlined text-[18px]" data-icon="link">link</span></div>
+</div>
+</div>
+<h5 class="font-headline-md text-headline-md text-on-surface">Alejandro Ruiz</h5>
+<p class="font-label-sm text-label-sm text-primary uppercase">CEO &amp; Chief Architect</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-md border border-outline-variant relative">
+<img alt="CTO" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a confident female technology leader in a minimalist white workspace. She is wearing a professional grey blazer over a dark top. The scene is illuminated by soft, diffused natural light from large side windows, creating a clean and modern high-fidelity appearance. The overall style is corporate modern, focusing on trust and technical proficiency with a palette of whites, grays, and soft blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMGrsyF8PHZZz-9W0O7hPbcjE9kv1W1-nGQ47ozBV1vW8ueZDCWcvtdY-V2yPxRD43Zran9lw9yzMJE3MmMSsG2ZulYTWUgbimtO1JOyizjMC21FpPzYoWH31uKhXmoQb7SY3GuLWryKLeH5Iz7mN3Uk8d9Nuu2xnOKOU6XK8D1gYRI-Vw9pR2iqK4mfGHWQ0Qihm-am7EzexXF7dIWM0pLL61KatMgfP8oX3bYYVPoULXOcQOQCod9TgOD82IFcd8qDmDH2JYb0o"/>
+<div class="absolute bottom-4 left-4 flex gap-xs opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary text-on-primary p-xs rounded-lg"><span class="material-symbols-outlined text-[18px]" data-icon="link">link</span></div>
+</div>
+</div>
+<h5 class="font-headline-md text-headline-md text-on-surface">Sofía Mendoza</h5>
+<p class="font-label-sm text-label-sm text-primary uppercase">CTO / Lead DevOps</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-md border border-outline-variant relative">
+<img alt="Lead Design" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A high-quality studio headshot of a creative male product designer in a modern corporate setting. He wears a premium dark sweater and glasses, looking directly at the camera with a calm, professional expression. The background is a slightly out-of-focus digital agency interior with clean geometric lines. The lighting is sophisticated and multi-layered, highlighting professional stability and attention to detail in a modern tech-oriented aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQewjlww4lG1qFiCfdKmZgm9Nq_FG4Hbn-b_DsSNrVgDtxwEBo8pnO022t0bHtoVNOgpe3RIyPYkz61rYtMH2RoD_76l_7c0thu0n7jxrZFl1OntYRt1nCZqFhcVZsU8PYYyhQsjWzO2E5jlbP9OSo9FUhesj4FcR5Ha30GyMQMOCvHSq4JaSXu5acYzvF3FS6vmEZtz45V_7pRwbdB4wed8FZLnRUXS75iFvOF2uQJwdAopY4Li3NVW-l-JAMR-1x7dJGYzfFno"/>
+<div class="absolute bottom-4 left-4 flex gap-xs opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary text-on-primary p-xs rounded-lg"><span class="material-symbols-outlined text-[18px]" data-icon="link">link</span></div>
+</div>
+</div>
+<h5 class="font-headline-md text-headline-md text-on-surface">David Vance</h5>
+<p class="font-label-sm text-label-sm text-primary uppercase">VP of Product Design</p>
+</div>
+<!-- Member 4 -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-md border border-outline-variant relative">
+<img alt="Head of QA" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A sharp, professional headshot of a female software engineer in a high-tech corporate office. She is dressed in a dark business-casual attire. The background features blurred servers and technical equipment with cool-toned blue LED accents, suggesting a sophisticated technical environment. The lighting is bright and focused, emphasizing clarity and corporate excellence in a clean, modern digital-first style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfno4RXRWlhyUTLheZ9nHOe8sGtAappl8yxnbKV07BU08HE9upIKu_5ZBP_HHbrHkxuJn3W3pPNjLjg6p10_gp4lb-IjUQlD1Rrs34aZF0BbPmur3Yvj_BPw7SMPsDlylAx3o3_8Nlo4wHEHaxgxVF4ZfvYzkxp4f6tSN16lZDXw2oPhJ5rKPqH1paB5pGVFsX3_I--0xP4YZ-mx2eczOFI3b2nyMTwuq6jYvtWIGSMJPyYabym_6yOujKhgbD-kVWrhcmYMZe44o"/>
+<div class="absolute bottom-4 left-4 flex gap-xs opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary text-on-primary p-xs rounded-lg"><span class="material-symbols-outlined text-[18px]" data-icon="link">link</span></div>
+</div>
+</div>
+<h5 class="font-headline-md text-headline-md text-on-surface">Lucía Torres</h5>
+<p class="font-label-sm text-label-sm text-primary uppercase">Head of Quality &amp; Security</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-xl border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-md">DevCorp</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Soluciones de software de alto nivel para empresas que lideran el mañana.</p>
+</div>
+<div>
+<h6 class="font-label-md text-label-md font-bold mb-md">Compañía</h6>
+<ul class="space-y-sm">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Conócenos</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Soluciones</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Carreras</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md font-bold mb-md">Recursos</h6>
+<ul class="space-y-sm">
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Blog Tech</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Documentación</a></li>
+<li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">API Status</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label-md text-label-md font-bold mb-md">Contacto</h6>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]" data-icon="mail">mail</span> info@devcorp.com</li>
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span> Madrid, España</li>
+</ul>
+<div class="mt-lg flex gap-md">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity" data-icon="rss_feed">rss_feed</span>
+</div>
+</div>
+</div>
+<div class="mt-xl pt-lg border-t border-outline-variant px-margin-desktop max-w-max-width mx-auto text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 DevCorp Software Solutions. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for scroll reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = "0";
+                section.classList.add('transition-opacity', 'duration-700');
+                observer.observe(section);
+            });
+            
+            // Adjusting initial opacity after observer set
+            setTimeout(() => {
+                document.querySelectorAll('section').forEach(s => s.style.opacity = "1");
+            }, 100);
+        });
+    </script>
+</body></html>

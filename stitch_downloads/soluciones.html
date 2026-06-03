@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Soluciones | DevCorp Software Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#444749",
+                    "secondary-container": "#dee0e2",
+                    "surface-container": "#e7eefe",
+                    "on-tertiary-fixed": "#141b2b",
+                    "secondary": "#5c5f60",
+                    "primary-fixed": "#dbe1ff",
+                    "primary": "#004ac6",
+                    "outline-variant": "#c3c6d7",
+                    "on-surface": "#151c27",
+                    "secondary-fixed": "#e1e2e4",
+                    "surface-bright": "#f9f9ff",
+                    "on-background": "#151c27",
+                    "on-surface-variant": "#434655",
+                    "surface-container-highest": "#dce2f3",
+                    "primary-container": "#2563eb",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-dim": "#d3daea",
+                    "on-secondary-container": "#606365",
+                    "surface-container-high": "#e2e8f8",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#ecf0ff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c5c7c8",
+                    "tertiary": "#4e5566",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#404758",
+                    "surface-variant": "#dce2f3",
+                    "outline": "#737686",
+                    "on-primary-fixed": "#00174b",
+                    "background": "#f9f9ff",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "inverse-surface": "#2a313d",
+                    "inverse-primary": "#b4c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#666d7f",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f0f3ff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary-fixed": "#191c1e",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#dce2f7",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "tertiary-fixed-dim": "#c0c6db",
+                    "surface": "#f9f9ff",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "0.5rem",
+                    "margin-mobile": "16px",
+                    "lg": "1.5rem",
+                    "max-width": "1280px",
+                    "xl": "2rem",
+                    "xs": "0.25rem",
+                    "md": "1rem",
+                    "unit": "4px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .service-card:hover .service-image { transform: scale(1.02); }
+        .glass-header { backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.8); }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- Header (Global) -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant shadow-sm glass-header">
+<div class="flex justify-between items-center h-16 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">DevCorp</div>
+<nav class="hidden md:flex space-x-xl">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Conócenos</a>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary" href="#">Soluciones</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Políticas</a>
+</nav>
+<button class="bg-primary text-on-primary px-lg py-sm rounded-lg font-label-md transition-all hover:opacity-90 active:scale-95">
+                Solicitar Demo
+            </button>
+</div>
+</header>
+<main class="pt-24 pb-xl px-margin-desktop max-w-max-width mx-auto">
+<!-- Hero Section -->
+<section class="mb-xl text-center md:text-left">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-md">Soluciones de Software de Alto Rendimiento</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Transformamos procesos complejos en experiencias digitales fluidas. Nuestra suite de soluciones está diseñada para escalar su empresa con precisión técnica.</p>
+</section>
+<!-- Services Grid -->
+<div class="flex flex-col gap-xl">
+<!-- Service 1: Administración de Servicios -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all">
+<div class="order-2 lg:order-1">
+<span class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md">EFICIENCIA OPERATIVA</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Administración de Servicios</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Optimice la gestión de recursos y la entrega de servicios con una plataforma centralizada que integra flujos de trabajo en tiempo real.</p>
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-primary mb-sm">Beneficios Clave</h3>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">check_circle</span>
+                                Visibilidad completa del ciclo de vida del servicio.
+                            </li>
+<li class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">check_circle</span>
+                                Reducción de tiempos de respuesta en un 40%.
+                            </li>
+</ul>
+</div>
+<div class="mb-lg p-md bg-surface-container rounded-lg">
+<p class="font-label-sm text-label-sm text-tertiary mb-xs uppercase">Caso de Uso</p>
+<p class="font-body-sm text-body-sm text-on-surface">Implementación en empresas de logística para el rastreo de flotas y asignación de tareas automatizada.</p>
+</div>
+<button class="flex items-center gap-sm font-label-md text-primary hover:underline group">
+                        Consultar sobre este servicio
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="order-1 lg:order-2 overflow-hidden rounded-lg">
+<img alt="Administración de Servicios" class="w-full h-[400px] object-cover service-image transition-transform duration-500" data-alt="A professional, clean workspace featuring high-end technology and data visualization dashboards on multiple sleek monitors. The environment is a bright corporate office with a minimalist aesthetic, using a palette of soft blues and crisp whites. Professional lighting highlights the precision and efficiency of modern service management software. The mood is clinical yet sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GenpuYjAoApNAO9XHpitNxYEvNvBkmNbuwjnty2Sdex-Q4rM9kxocrjl8_HLZgjmZK--JkGXVYmjzNwWelTsAFFd43rvjKLlO2X-yBk5-Y4rukEYLoVpxlhcWN5bBiUwngg_M8L-I_25IXF0DGX3-AzLWctWgVkaGYcoBOobBidKWlh4pV7GqBv1alfOd7HC-hZUNl64Vt__KorwcpaGAgd8JtHhBAUQTA74WTVeTmqje_nJFyQ9bBPzpUHxXZ1AJZI2k2ws6gA"/>
+</div>
+</section>
+<!-- Service 2: Sistema POS -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all">
+<div class="overflow-hidden rounded-lg">
+<img alt="Sistema POS" class="w-full h-[400px] object-cover service-image transition-transform duration-500" data-alt="A modern, high-end retail point of sale system integrated into a minimalist boutique environment. The scene captures a sleek touchscreen tablet on a marble counter, reflecting soft studio lighting. The interface shown is clean and user-friendly, emphasizing a light mode UI with vibrant primary blue accents. The overall atmosphere is premium, modern, and focused on seamless transactional experiences." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdak2S2fLvGWq8-VdQP3QavVXkzY70idfwThqtXlxR-vOljeA7Eb8_Hfc1O2dd7eGTf2eygG9FDq1oZhcITnAr62Mynh2DUu9MpD8Fxx99CvgzdHRFVW5Si8ZlD8ghKmEBHN-E5w42BMIIy3w7s2KpI0ZGxVnUHmjtcJep3KLt748nED1TnWEm49ceqTn5CmMj0KWZh5boPtjPo52tPXTgit_TIzpx4dyrRr0UtUAqL2G3yoVKh7pHIBaHJA8F74Fq1qJHf6QgLwE"/>
+</div>
+<div>
+<span class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md">RETAIL &amp; COMERCIO</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Sistema POS Inteligente</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Más que un punto de venta: una herramienta analítica que gestiona inventarios, ventas y fidelización en una sola interfaz.</p>
+<div class="mb-lg">
+<h3 class="font-label-md text-label-md text-primary mb-sm">Beneficios Clave</h3>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">check_circle</span>
+                                Sincronización en la nube en tiempo real.
+                            </li>
+<li class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 20px;">check_circle</span>
+                                Reportes de ventas avanzados con predicción de stock.
+                            </li>
+</ul>
+</div>
+<div class="mb-lg p-md bg-surface-container-high rounded-lg">
+<p class="font-label-sm text-label-sm text-tertiary mb-xs uppercase">Caso de Uso</p>
+<p class="font-body-sm text-body-sm text-on-surface">Cadenas de retail que requieren unificar su stock entre tiendas físicas y su plataforma e-commerce.</p>
+</div>
+<button class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90">
+                        Ver Detalles del POS
+                    </button>
+</div>
+</section>
+<!-- Service 3 & 4: Aplicaciones Móviles & Desarrollo Web (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+<!-- Móviles -->
+<article class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-primary-container text-on-primary rounded-lg flex items-center justify-center mb-lg">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Aplicaciones Móviles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-lg">Desarrollamos experiencias nativas e híbridas de alto impacto visual y rendimiento excepcional en iOS y Android.</p>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">done</span>
+                                UX centrada en el usuario.
+                            </li>
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">done</span>
+                                Integración con hardware biométrico.
+                            </li>
+</ul>
+</div>
+<button class="border border-outline text-on-surface px-md py-sm rounded-lg font-label-md hover:bg-surface-variant transition-colors">Saber Más</button>
+</article>
+<!-- Web -->
+<article class="bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-lg flex items-center justify-center mb-lg">
+<span class="material-symbols-outlined">language</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Desarrollo Web</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-lg">Aplicaciones web robustas construidas con las tecnologías más modernas para garantizar escalabilidad y seguridad.</p>
+<ul class="space-y-sm mb-lg">
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">done</span>
+                                Arquitecturas Micro-frontend.
+                            </li>
+<li class="flex items-center gap-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" style="font-size: 16px;">done</span>
+                                Optimización SEO y Core Web Vitals.
+                            </li>
+</ul>
+</div>
+<button class="border border-outline text-on-surface px-md py-sm rounded-lg font-label-md hover:bg-surface-variant transition-colors">Saber Más</button>
+</article>
+</div>
+<!-- Service 5: Automatización Empresarial -->
+<section class="bg-inverse-surface text-inverse-on-surface p-xl rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-xl items-center overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-md">Automatización Empresarial</h2>
+<p class="font-body-md text-body-md text-outline-variant mb-lg">Elimine tareas repetitivas y errores humanos mediante workflows automatizados de punta a punta.</p>
+<div class="grid grid-cols-2 gap-md mb-lg">
+<div class="p-md bg-white/10 rounded-lg">
+<p class="font-headline-md text-headline-md text-primary-fixed">60%</p>
+<p class="font-label-sm text-label-sm">Ahorro en tiempo</p>
+</div>
+<div class="p-md bg-white/10 rounded-lg">
+<p class="font-headline-md text-headline-md text-primary-fixed">0.1%</p>
+<p class="font-label-sm text-label-sm">Margen de error</p>
+</div>
+</div>
+<button class="bg-primary-fixed text-on-primary-fixed px-lg py-md rounded-lg font-label-md transition-all hover:bg-white">
+                        Solicitar Consultoría de RPA
+                    </button>
+</div>
+<div class="relative z-10 h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden border border-white/20">
+<img alt="Automatización" class="w-full h-full object-cover" data-alt="Close-up shot of complex microchip circuits with flowing lines of light representing data transfer. The visual style is futuristic and high-tech, using deep dark blues and vibrant electric blue glowing accents. Soft focus on the background creates a sense of depth and intricate complexity. The mood is powerful and technologically advanced, symbolizing seamless business process automation and digital transformation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4B9yk6fygCfS5j7AfUJJSZacy3E2v0DQgFABCknSA4KEcJKqZnt4_H-UV7IlqA3EEfJd9Y0tAmXAqZw7GcNwwEi-sSca_Ouhe1oj-Nk831EWup9Gixf4sgwKwmrzUFDCA8nW_Wv5bxeOSe0C7Wx2iPch2LgePlX_6h8rQrjcCSMRKzdRztL-1RBS0DY-EekVb7h3rR54zTDoVXA0y8ICaVew64m1ouYwrr9Elz3aYuhA0t0DKCyqeaY2Bq32UcVtt-ZT2DMPY_rU"/>
+</div>
+</section>
+<!-- Service 6: Inteligencia Artificial -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all">
+<div class="overflow-hidden rounded-lg">
+<img alt="Inteligencia Artificial" class="w-full h-[400px] object-cover service-image transition-transform duration-500" data-alt="An abstract visualization of neural networks and machine learning patterns, characterized by glowing interconnected nodes in a vast digital space. The color palette consists of soft greys, pure whites, and intense primary blue nodes. Lighting is ethereal and soft, creating a modern, high-tier light-mode aesthetic that suggests intelligence and deep data processing. The image evokes a sense of infinite possibility and advanced computational power." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCps86M1sy14mV0OKMx27RVnGX76E9v2uu1venZob04xOuA38XMnaX0nOh2cbxyCqU9BkAD3xJ_7ZHl40X7tNmQINMGEQv0juZx8_sqtR6C-JiejXFd22HYSE70crVGkyoiPDML46SkkhcC7DgSqJRFzp_l7MDOYjnJwnRPT5zj6GChLDU7aLXyYfYXwVIv7sbtHdbxhhScXKIJ-1xRDlPeVFjHRkQZe-uwBgpeWzWhBuSghEEmUXtI_eh89S-7xdPEoNQ0Fvb9keY"/>
+</div>
+<div>
+<span class="inline-block px-md py-xs bg-on-tertiary-container text-primary rounded-full font-label-sm text-label-sm mb-md">NUEVA FRONTERA</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Inteligencia Artificial Aplicada</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">Modelos de IA personalizados para análisis predictivo, procesamiento de lenguaje natural y visión por computadora.</p>
+<div class="space-y-md mb-lg">
+<div class="flex gap-md">
+<div class="shrink-0 w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">psychology</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">Predictive Analytics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Anticipe tendencias de mercado y comportamientos de clientes con precisión estadística.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="shrink-0 w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 18px;">chat_bubble</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface">NLP &amp; Chatbots</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interacciones inteligentes y automatizadas que entienden el contexto real del usuario.</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90">
+                        Explorar Potencial de IA
+                    </button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer (Global) -->
+<footer class="bg-surface-container-low w-full py-xl mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="flex flex-col gap-md">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">DevCorp</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Soluciones de software de clase mundial para empresas que no se detienen.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-md">Empresa</h4>
+<nav class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Conócenos</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Carreras</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Noticias</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-md">Recursos</h4>
+<nav class="flex flex-col gap-sm">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Blog Técnico</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Documentación API</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Soporte</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-md">Contacto</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-sm">ventas@devcorp.com</p>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">hub</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">contact_mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop pt-xl mt-xl border-t border-outline-variant">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+                © 2024 DevCorp Software Solutions. Todos los derechos reservados.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interactions for scrolling
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Simple entrance animation for cards
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700', 'ease-out');
+            observer.observe(card);
+        });
+    </script>
+</body></html>

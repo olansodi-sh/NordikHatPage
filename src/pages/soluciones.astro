@@ -1,0 +1,440 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Soluciones | Nordikhat Software Solutions">
+  <main class="pt-24 pb-xl px-margin-desktop max-w-max-width mx-auto">
+    <!-- Hero Section -->
+    <section class="mb-xl text-center md:text-left">
+      <h1 class="font-headline-xl text-headline-xl text-on-surface mb-md">
+        Soluciones de Software de Alto Rendimiento
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+        Transformamos procesos complejos en experiencias digitales fluidas.
+        Nuestra suite de soluciones está diseñada para escalar su empresa con
+        precisión técnica.
+      </p>
+    </section>
+    <!-- Services Grid -->
+    <div class="flex flex-col gap-16 md:gap-24 lg:gap-32">
+      <!-- 1. Residencial -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="overflow-hidden rounded-lg">
+          <img
+            alt="Sistema Residencial de Conjuntos"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="/imagenes/ConjuntosResidenciales.jpg"
+          />
+        </div>
+        <div>
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >COMUNIDADES</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Sistema Residencial de Conjuntos
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Solución completa para la administración de propiedad horizontal.
+            Digitalice la comunicación con residentes, optimice la seguridad y
+            tenga visibilidad total de las finanzas.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Control de Accesos y Visitas.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Pagos y Recaudo de Administración.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+      </section>
+
+      <!-- 2. Limpieza -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="order-2 lg:order-1">
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >OPERACIONES</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Administración de Servicios de Limpieza
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Plataforma integral diseñada para agencias y empresas de aseo.
+            Permite asignar turnos, monitorear el desempeño del personal en
+            campo mediante GPS y facturar rápidamente los servicios prestados.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Módulo móvil para empleados (check-in / check-out).
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Dashboard analítico para supervisores y clientes.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+        <div class="order-1 lg:order-2 overflow-hidden rounded-lg">
+          <img
+            alt="Administración de Limpieza"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="/imagenes/ServiciosLimpieza.jpg"
+          />
+        </div>
+      </section>
+
+      <!-- 3. POS -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="overflow-hidden rounded-lg">
+          <img
+            alt="Sistema POS con facturación electrónica"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdak2S2fLvGWq8-VdQP3QavVXkzY70idfwThqtXlxR-vOljeA7Eb8_Hfc1O2dd7eGTf2eygG9FDq1oZhcITnAr62Mynh2DUu9MpD8Fxx99CvgzdHRFVW5Si8ZlD8ghKmEBHN-E5w42BMIIy3w7s2KpI0ZGxVnUHmjtcJep3KLt748nED1TnWEm49ceqTn5CmMj0KWZh5boPtjPo52tPXTgit_TIzpx4dyrRr0UtUAqL2G3yoVKh7pHIBaHJA8F74Fq1qJHf6QgLwE"
+          />
+        </div>
+        <div>
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >RETAIL Y VENTAS</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Sistema POS con Facturación Electrónica
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Gestione sus ventas, inventario y cumpla con todas las normativas
+            fiscales mediante nuestra facturación electrónica integrada
+            directamente con la DIAN u otros entes.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Facturación electrónica lista y validada.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Control de inventarios y cajas en tiempo real.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+      </section>
+
+      <!-- 4. Daycares -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="order-2 lg:order-1">
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >CUIDADO INFANTIL</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Sistema para Daycares y Guarderías
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Software especializado en guarderías y centros de cuidado infantil.
+            Facilita el control de asistencia, comunicación diaria en tiempo
+            real con padres, planificación de menús alimenticios y facturación
+            recurrente de mensualidades.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Reportes diarios para padres en tiempo real.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Facturación automática y control de asistencia.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+        <div class="order-1 lg:order-2 overflow-hidden rounded-lg">
+          <img
+            alt="Daycares"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="/imagenes/AdministracionDayCare.jpg"
+          />
+        </div>
+      </section>
+
+      <!-- 5. Chatbots -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="overflow-hidden rounded-lg">
+          <img
+            alt="Chatbots de IA"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="/imagenes/ChatIa.jpg"
+          />
+        </div>
+        <div>
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >AUTOMATIZACIÓN</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Chatbots de IA
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Automatice la atención a sus clientes por WhatsApp, Redes Sociales y
+            Web. Entregue respuestas rápidas 24/7 y genere tickets o ventas
+            automáticamente.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Disponibilidad 24/7 en WhatsApp y Web.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Procesamiento de lenguaje natural avanzado.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+      </section>
+
+      <!-- 6. Instituciones -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="order-2 lg:order-1">
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >EDUCACIÓN</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Sistema para Instituciones Educativas
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Plataforma robusta para colegios y academias. Incluye portal
+            integral de calificaciones, gestión de tareas, comunicación directa
+            entre docentes, alumnos y padres, y un módulo de control financiero
+            escolar.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Portal para docentes, estudiantes y padres.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Gestión de calificaciones y finanzas.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+        <div class="order-1 lg:order-2 overflow-hidden rounded-lg">
+          <img
+            alt="Instituciones Educativas"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop"
+          />
+        </div>
+      </section>
+
+      <!-- 7. Web y Apps -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center bg-surface-container-lowest p-xl rounded-xl border border-outline-variant shadow-sm service-card transition-all"
+      >
+        <div class="overflow-hidden rounded-lg">
+          <img
+            alt="Creación de Páginas Web y Apps Móviles"
+            class="w-full h-[400px] object-cover service-image transition-transform duration-500"
+            src="/imagenes/PaginasWebs.jpg"
+          />
+        </div>
+        <div>
+          <span
+            class="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm text-label-sm mb-md"
+            >DESARROLLO A MEDIDA</span
+          >
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">
+            Creación de Páginas Web y Apps Móviles
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+            Llevamos su marca al siguiente nivel digital. Desarrollamos desde
+            Landing Pages corporativas modernas hasta aplicaciones complejas
+            nativas para iOS y Android hechas 100% a medida.
+          </p>
+          <div class="mb-lg">
+            <h3 class="font-label-md text-label-md text-primary mb-sm">
+              Características
+            </h3>
+            <ul class="space-y-sm">
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Diseños UX/UI de vanguardia.
+              </li>
+              <li
+                class="flex items-center gap-sm text-body-sm font-body-sm text-on-surface-variant"
+              >
+                <span
+                  class="material-symbols-outlined text-primary"
+                  style="font-size: 20px;">check_circle</span
+                > Escalabilidad y seguridad en la nube.
+              </li>
+            </ul>
+          </div>
+          <a
+            href="/contacto"
+            class="bg-primary text-on-primary px-lg py-md rounded-lg font-label-md transition-all hover:opacity-90 inline-block"
+            >Solicitar Cotización</a
+          >
+        </div>
+      </section>
+    </div>
+  </main>
+  <style>
+    .service-card:hover .service-image {
+      transform: scale(1.02);
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+              entry.target.classList.remove("opacity-0", "translate-y-10");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document.querySelectorAll(".service-card").forEach((card) => {
+        card.classList.add(
+          "opacity-0",
+          "translate-y-10",
+          "transition-all",
+          "duration-700",
+          "ease-out",
+        );
+        observer.observe(card);
+      });
+    });
+  </script>
+</Layout>
