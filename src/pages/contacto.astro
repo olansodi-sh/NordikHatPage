@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Contacto | Nordikhat Software Solutions">
+<Layout title="Contacto | NordikHat SAS">
   <main class="pt-32 pb-xl">
     <div class="max-w-max-width mx-auto px-margin-desktop">
       <!-- Page Header -->
@@ -21,7 +21,16 @@ import Layout from "../layouts/Layout.astro";
           <div
             class="bg-surface-container-lowest border border-outline-variant p-xl rounded-xl shadow-sm"
           >
-            <form class="space-y-lg" id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-lg" id="contact-form">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="cd9cfcbf-2c03-4b8c-816c-96783935e94e" />
+              <!-- Anti-Spam Honeypot (Invisible para humanos, engaña a los bots) -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+              
+              <!-- Personalización de Asunto y Remitente -->
+              <input type="hidden" name="subject" value="Nuevo contacto desde la web de Nordikhat" />
+              <input type="hidden" name="from_name" value="Nordikhat Contact Form" />
+
               <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
                 <div class="space-y-xs">
                   <label
@@ -29,6 +38,8 @@ import Layout from "../layouts/Layout.astro";
                     >Nombre Completo</label
                   >
                   <input
+                    name="name"
+                    required
                     class="w-full bg-surface-bright border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all font-body-md"
                     placeholder="Juan Pérez"
                     type="text"
@@ -40,6 +51,7 @@ import Layout from "../layouts/Layout.astro";
                     >Empresa</label
                   >
                   <input
+                    name="company"
                     class="w-full bg-surface-bright border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all font-body-md"
                     placeholder="Tech Solutions S.A."
                     type="text"
@@ -53,6 +65,8 @@ import Layout from "../layouts/Layout.astro";
                     >Correo Electrónico</label
                   >
                   <input
+                    name="email"
+                    required
                     class="w-full bg-surface-bright border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all font-body-md"
                     placeholder="juan@empresa.com"
                     type="email"
@@ -64,6 +78,7 @@ import Layout from "../layouts/Layout.astro";
                     >Teléfono</label
                   >
                   <input
+                    name="phone"
                     class="w-full bg-surface-bright border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all font-body-md"
                     placeholder="+57 300 000 0000"
                     type="tel"
@@ -76,6 +91,8 @@ import Layout from "../layouts/Layout.astro";
                   >Mensaje</label
                 >
                 <textarea
+                  name="message"
+                  required
                   class="w-full bg-surface-bright border border-outline-variant rounded-lg p-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all font-body-md"
                   placeholder="¿Cómo podemos ayudarte?"
                   rows="4"></textarea>
